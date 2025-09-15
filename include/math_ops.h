@@ -6,3 +6,4 @@ float square(float);
 float cube(float);
 float pow(float, int);
 float sub(float, float);
+float divide(float, float);
