@@ -1,5 +1,15 @@
-// --------- FUNCTION IMPLEMENTATIONS ------------
 #include "math_ops.h"
+
+#ifndef UNITY_PROGMEM
+#define UNITY_PROGMEM
+#endif
+
+/* If omitted from header, declare overrideable prototypes here so they're ready for use */
+#ifdef UNITY_OMIT_OUTPUT_CHAR_HEADER_DECLARATION
+void UNITY_OUTPUT_CHAR(int);
+#endif
+
+// --------- FUNCTION IMPLEMENTATIONS ------------
 
 float multiply(float x, float y) 
 {
