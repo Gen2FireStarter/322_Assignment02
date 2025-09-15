@@ -30,7 +30,7 @@ $(TEST_TARGET): $(TEST_OBJS)
 $(OBJ_DIR)/main.o: $(SRC_DIR)/main.c 
 	$(CC) $(CFLAGS) -c $< -o $@
 
-$(OBJ_DIR)/math_ops.o: math_ops.c math_ops.c		# $(OBJ_DIR)/code.o: $(SRC_DIR)/code.c
+$(OBJ_DIR)/math_ops.o: $(SRC_DIR)/math_ops.c		# $(OBJ_DIR)/code.o: $(SRC_DIR)/code.c
 	$(CC) $(CFLAGS) -c $< -o $@
 
 $(OBJ_DIR)/tests.o: $(TEST_DIR)/tests.c
