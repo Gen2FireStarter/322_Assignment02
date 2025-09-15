@@ -1,4 +1,5 @@
 // --------- FUNCTION IMPLEMENTATIONS ------------
+#include "math_ops.h"
 
 float multiply(float x, float y) 
 {
