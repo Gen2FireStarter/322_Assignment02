@@ -8,5 +8,6 @@ float cube(float);
 float pow(float, int);
 float sub(float, float);
 float divide(float, float);
+double sin(double x, int steps);
 
 #endif
