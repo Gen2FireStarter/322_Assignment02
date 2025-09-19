@@ -1,5 +1,5 @@
 CC = gcc
-CFLAGS = -g -Wall -std=c99 -pedantic
+CFLAGS = -g -Wall -std=c99 -pedantic -Iinclude
 
 SRC_DIR = src
 TEST_DIR = tests
@@ -30,7 +30,7 @@ $(TEST_TARGET): $(TEST_OBJS)
 $(OBJ_DIR)/main.o: $(SRC_DIR)/main.c 
 	$(CC) $(CFLAGS) -c $< -o $@
 
-$(OBJ_DIR)/math_ops.o: $(SRC_DIR)/math_ops.c		# $(OBJ_DIR)/code.o: $(SRC_DIR)/code.c
+$(OBJ_DIR)/math_ops.o: src/math_ops.c include/math_ops.h	# $(OBJ_DIR)/code.o: $(SRC_DIR)/code.c
 	$(CC) $(CFLAGS) -c $< -o $@
 
 $(OBJ_DIR)/tests.o: $(TEST_DIR)/tests.c

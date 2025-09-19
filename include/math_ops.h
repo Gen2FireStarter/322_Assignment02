@@ -5,10 +5,10 @@ float multiply(float, float);
 float add(float, float);
 float square(float);
 float cube(float);
-float pow(float, int);
+float mypow(float, int);
 float sub(float, float);
 float divide(float, float);
-double sin(double x, int steps);
-double cos(double x, int steps);
+double mysin(double x, int steps);
+double mycos(double x, int steps);
 
 #endif
