@@ -1,0 +1,257 @@
+Folder PATH listing
+Volume serial number is 66B3-F9AC
+C:.
+¦   .gitignore
+¦   Makefile
+¦   result.txt
+¦   
++---.vscode
+¦       launch.json
+¦       settings.json
+¦       tasks.json
+¦       
++---bin
++---include
+¦       math_ops.h
+¦       
++---obj
++---src
+¦       main.c
+¦       math_ops.c
+¦       
++---tests
+        tests.c
+        unity.c
+        unity.h
+        unity_internals.h
+        
+* commit cf840dfda64870b1d345dc5158e5c7f094c66044
+| Author: dMcDonough <dmcdonough1@mtech.edu>
+| Date:   Mon Sep 15 10:39:13 2025 -0600
+| 
+|     I wrote that I am an author of this respository in main.c
+| 
+* commit 6a83fc76905cdbfd8faf1ccd91c942e3ff666f4d
+| Author: dMcDonough <dmcdonough1@mtech.edu>
+| Date:   Mon Sep 15 10:34:29 2025 -0600
+| 
+|     Cleaned up math_ops.c so that it includes math_ops.h
+| 
+* commit 8df32ad8c239b2d1cac8e2c7a9bdf9f4f216483c
+| Author: dMcDonough <dmcdonough1@mtech.edu>
+| Date:   Mon Sep 15 10:33:07 2025 -0600
+| 
+|     Moved ifndef, define, and endif from math_ops.c to math_ops.h
+| 
+* commit 5f23e9e40fe71d389d9ac6990034dfb87d3f4f9a
+| Author: dMcDonough <dmcdonough1@mtech.edu>
+| Date:   Mon Sep 15 10:30:52 2025 -0600
+| 
+|     Added header ifndef, define, and endif to prevent multiple inclusion in math_ops.c
+| 
+* commit fafff44d64750ee16bd58edf07d09c32ca714154
+| Author: dMcDonough <dmcdonough1@mtech.edu>
+| Date:   Mon Sep 15 10:22:31 2025 -0600
+| 
+|     Modified Makefile to adjust to math_ops.c
+| 
+* commit c630afa4a1c1aa512c91ac9b4ac1cd8cbfdca0a5
+| Author: dMcDonough <dmcdonough1@mtech.edu>
+| Date:   Mon Sep 15 10:14:53 2025 -0600
+| 
+|     Modified main.c so that the options lined up to the functions.
+| 
+* commit c4ce42170028b84742b4deaebfb98938bdad66de
+| Author: dMcDonough <dmcdonough1@mtech.edu>
+| Date:   Mon Sep 15 10:13:40 2025 -0600
+| 
+|     Added division to my header for math_ops.h
+| 
+* commit 25fe47443f45964efa9c674b486737be23df3e4b
+| Author: dMcDonough <dmcdonough1@mtech.edu>
+| Date:   Mon Sep 15 10:13:03 2025 -0600
+| 
+|     Added division function to math_ops.c
+| 
+* commit 71f134b7f869004813880f725895ac0b11df1831
+| Author: dMcDonough <dmcdonough1@mtech.edu>
+| Date:   Mon Sep 15 10:02:39 2025 -0600
+| 
+|     Deleted README.md file.
+| 
+* commit 99f094a65c57679547417d10b53d585104b277c9
+| Author: dMcDonough <dmcdonough1@mtech.edu>
+| Date:   Fri Sep 12 10:37:46 2025 -0600
+| 
+|     Added sub function header in math_ops.h
+| 
+* commit f0dc9cb74e8b868c5c52dd8af24a1204c65998bb
+| Author: dMcDonough <dmcdonough1@mtech.edu>
+| Date:   Fri Sep 12 10:37:12 2025 -0600
+| 
+|     Moved sub function from main.c to math_ops.c
+| 
+* commit e479f06bf5399539e94969576470a10063174501
+| Author: dMcDonough <dmcdonough1@mtech.edu>
+| Date:   Fri Sep 12 10:36:41 2025 -0600
+| 
+|     Added code in math_ops.h for the respective math functions
+| 
+* commit dcbffa189821add84e949ae655b41cdba0b9add2
+| Author: dMcDonough <dmcdonough1@mtech.edu>
+| Date:   Fri Sep 12 10:29:56 2025 -0600
+| 
+|     Moved math_ops.h to the include directory
+| 
+* commit 74c69b33a53a3c050f8a5ad522a3ca3e8b99d55c
+| Author: dMcDonough <dmcdonough1@mtech.edu>
+| Date:   Fri Sep 12 10:29:34 2025 -0600
+| 
+|     Created new file math_ops.h
+| 
+* commit fa30924bb8cdf53000b40804e6427c849a8872aa
+| Author: dMcDonough <dmcdonough1@mtech.edu>
+| Date:   Fri Sep 12 10:28:52 2025 -0600
+| 
+|     Moved tests.c, unity_internals.h, unity.c, and unity.h into the tests directory
+| 
+* commit f81e7e7d8b15396dc6c8a07fecb0bcaaa07b1093
+| Author: dMcDonough <dmcdonough1@mtech.edu>
+| Date:   Fri Sep 12 10:25:19 2025 -0600
+| 
+|     Moved math_ops.c into the src directory
+| 
+* commit c74ea69df63b0ca288c5f6f5625956047bbe0373
+| Author: dMcDonough <dmcdonough1@mtech.edu>
+| Date:   Fri Sep 12 10:24:51 2025 -0600
+| 
+|     Moved tests.c and unity.c into the src directory
+| 
+* commit d455a72ec1d198194ef5b270bffcd69aca5b504a
+| Author: dMcDonough <dmcdonough1@mtech.edu>
+| Date:   Fri Sep 12 10:24:16 2025 -0600
+| 
+|     Moved unity_internals.h and unity.h into the include directory
+| 
+* commit 09c785e58a06bf2c150bec8a9e683738065362dd
+| Author: dMcDonough <dmcdonough1@mtech.edu>
+| Date:   Fri Sep 12 10:23:31 2025 -0600
+| 
+|     Added new directory called include for header files
+| 
+* commit 6c8d7fda18287526c7a217218c7d8bd9ccd2bd67
+| Author: dMcDonough <dmcdonough1@mtech.edu>
+| Date:   Fri Sep 12 10:21:15 2025 -0600
+| 
+|     Deleted code2.c
+| 
+* commit d99c226dc09f1662f9fadc0fc7bc3ce00e424489
+| Author: dMcDonough <dmcdonough1@mtech.edu>
+| Date:   Fri Sep 12 10:20:31 2025 -0600
+| 
+|     Moved math functions from code2.c to math_ops.c
+| 
+* commit 46bd0906ee0e5f5c464a242d83fc4cbe4973abe3
+| Author: dMcDonough <dmcdonough1@mtech.edu>
+| Date:   Fri Sep 12 10:19:44 2025 -0600
+| 
+|     Deleted code.c file
+| 
+* commit 22731c3af682a4a4ae232a218d19dd9d1783a603
+| Author: dMcDonough <dmcdonough1@mtech.edu>
+| Date:   Fri Sep 12 10:18:46 2025 -0600
+| 
+|     Moved math functions from code.c to math_ops.c
+| 
+* commit 5a1e2d7faa66c09737fd089d3302ee17473d558a
+| Author: dMcDonough <dmcdonough1@mtech.edu>
+| Date:   Fri Sep 12 10:14:57 2025 -0600
+| 
+|     Added math.ops.c file.
+| 
+* commit ac72030664d874b40f7c25263d11d634e65fb5bb
+| Author: jpach-cs <jlpach@outlook.com>
+| Date:   Fri Sep 12 07:40:11 2025 -0600
+| 
+|     Update README.md
+| 
+* commit 6ef4aa973d153f528af36c61992f6bc19d9e25b0
+| Author: jpach-cs <jlpach@outlook.com>
+| Date:   Fri Sep 12 07:38:26 2025 -0600
+| 
+|     Update README.md
+| 
+* commit d0d54cb34b91099cbd941b6689a8b61c7e997d6b
+| Author: jpach-cs <jlpach@outlook.com>
+| Date:   Fri Sep 12 07:37:19 2025 -0600
+| 
+|     Update README.md
+| 
+* commit 33d73a84aaedfad70cf066c4235bff9f83400aa3
+| Author: jpach-cs <jlpach@outlook.com>
+| Date:   Fri Sep 12 07:36:42 2025 -0600
+| 
+|     Create README.md
+| 
+* commit fb42b831ea271382743302f3607ab2fd105726c7
+| Author: Jacob Pach <jpach@mtech.edu>
+| Date:   Fri Sep 12 07:15:01 2025 -0600
+| 
+|     fix .gitignore
+| 
+* commit 9ed4bb1b5c0103680a0ca0a104309428c2143f7f
+| Author: Jacob Pach <jpach@mtech.edu>
+| Date:   Fri Sep 12 07:13:24 2025 -0600
+| 
+|     add tests/
+|   
+*   commit 3d7e2d6be82361851d3dc1afaacafdf5dbe7e06b
+|\  Merge: faee1ad 17de3fc
+| | Author: Jacob Pach <jpach@mtech.edu>
+| | Date:   Fri Sep 12 07:12:25 2025 -0600
+| | 
+| |     Merge branch 'fixbug2'
+| | 
+| * commit 17de3fc514c17cb4892e8d678b41d3df9d3f1526
+| | Author: Jacob Pach <jpach@mtech.edu>
+| | Date:   Fri Sep 12 07:06:33 2025 -0600
+| | 
+| |     add code2.c
+| |   
+* |   commit faee1ad92a95dcdcc35ffd25c2823cedc70a9fb8
+|\ \  Merge: 7410bbd 7c3ff76
+| | | Author: Jacob Pach <jpach@mtech.edu>
+| | | Date:   Fri Sep 12 07:12:12 2025 -0600
+| | | 
+| | |     Merge branch 'fixbug'
+| | | 
+| * | commit 7c3ff76af2f1245c5be58ee06cd0a6f43f5b76e4
+| | | Author: Jacob Pach <jpach@mtech.edu>
+| | | Date:   Fri Sep 12 07:07:11 2025 -0600
+| | | 
+| | |     add code.c
+| | | 
+| * | commit 1559b41825849b541956a3549332114b3e151be8
+| | | Author: Jacob Pach <jpach@mtech.edu>
+| | | Date:   Fri Sep 12 07:03:12 2025 -0600
+| | | 
+| | |     add ./vscode for vsc
+| | | 
+* | | commit 7410bbd7b220139649e0e2b08b48c448c393d07f
+| |/  Author: Jacob Pach <jpach@mtech.edu>
+|/|   Date:   Fri Sep 12 07:11:00 2025 -0600
+| |   
+| |       add .gitignore
+| | 
+* | commit 2db5c5927ad8031763f120ef983a580a35ad4137
+|/  Author: Jacob Pach <jpach@mtech.edu>
+|   Date:   Fri Sep 12 07:04:36 2025 -0600
+|   
+|       move main.c to /src
+| 
+* commit ceebb9b545b7469b488918e048b1cd936def0533
+  Author: Jacob Pach <jpach@mtech.edu>
+  Date:   Fri Sep 12 07:01:45 2025 -0600
+  
+      add main.c, makefile
+https://github.com/Gen2FireStarter/322_Assignment02
