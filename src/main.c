@@ -47,8 +47,8 @@ int main(int argc, char *argv[])
             printf("  --power a b          Raise a to the power of b\n");
             printf("  --square a           Square of a number\n");
             printf("  --cube a             Cube of a number\n");
-            printf("  --sin a b             Sin of a number\n");
-            printf("  --cos a b            Cos of a number\n");
+            printf("  --sin a             Sin of a number\n");
+            printf("  --cos a            Cos of a number\n");
         }
     }
     else
