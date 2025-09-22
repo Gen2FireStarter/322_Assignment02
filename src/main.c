@@ -25,9 +25,8 @@ int main(int argc, char *argv[])
 
     printf("%s\n", argv[0]);
     printf("%s\n", argv[1]);
-    printf("%s\n", argv[2]);
-    printf("%s\n", argv[3]);
-    printf("%f\n", atof(argv[2]) );
+    if (argc > 2) printf("%s\n", argv[2]);
+    if (argc > 3) printf("%s\n", argv[3]);
 
     if (argc > 1 )
     {
@@ -50,51 +49,51 @@ int main(int argc, char *argv[])
             printf("  --sin a             Sin of a number\n");
             printf("  --cos a            Cos of a number\n");
         }
-    }
-    else if(strcmp(argv[1], "--add") == 0) 
-    {
-        float result = add(atof(argv[2]), atof(argv[3]));
-        printf("%s\n", result);
-    }
-    else if(strcmp(argv[1], "--sub") == 0) 
-    {
-        float result = sub(atof(argv[2]), atof(argv[3]));
-        printf("%s\n", result);
-    }
-    else if(strcmp(argv[1], "--multiply") == 0) 
-    {
-        float result = multiply(atof(argv[2]), atof(argv[3]));
-        printf("%s\n", result);
-    }
-    else if(strcmp(argv[1], "--divide") == 0) 
-    {
-        float result = divide(atof(argv[2]), atof(argv[3]));
-        printf("%s\n", result);
-    }
-    else if(strcmp(argv[1], "--power") == 0) 
-    {
-        float result = mypow(atof(argv[2]), atoi(argv[3]));
-        printf("%s\n", result);
-    }
-    else if(strcmp(argv[1], "--square") == 0) 
-    {
-        float result = square(atof(argv[2]));
-        printf("%s\n", result);
-    }
-    else if(strcmp(argv[1], "--cube") == 0) 
-    {
-        float result = cube(atof(argv[2]));
-        printf("%s\n", result);
-    }
-    else if(strcmp(argv[1], "--sin") == 0) 
-    {
-        float result = mysin(atof(argv[2]), atoi(argv[3]));
-        printf("%s\n", result);
-    }
-    else if(strcmp(argv[1], "--cos") == 0) 
-    {
-        float result = mycos(atof(argv[2]), atoi(argv[3]));
-        printf("%s\n", result);
+        else if(strcmp(argv[1], "--add") == 0) 
+        {
+            float result = add(atof(argv[2]), atof(argv[3]));
+            printf("%f\n", result);
+        }
+        else if(strcmp(argv[1], "--sub") == 0) 
+        {
+            float result = sub(atof(argv[2]), atof(argv[3]));
+            printf("%f\n", result);
+        }
+        else if(strcmp(argv[1], "--multiply") == 0) 
+        {
+            float result = multiply(atof(argv[2]), atof(argv[3]));
+            printf("%f\n", result);
+        }
+        else if(strcmp(argv[1], "--divide") == 0) 
+        {
+            float result = divide(atof(argv[2]), atof(argv[3]));
+            printf("%f\n", result);
+        }
+        else if(strcmp(argv[1], "--power") == 0) 
+        {
+            float result = mypow(atof(argv[2]), atoi(argv[3]));
+            printf("%f\n", result);
+        }
+        else if(strcmp(argv[1], "--square") == 0) 
+        {
+            float result = square(atof(argv[2]));
+            printf("%f\n", result);
+        }
+        else if(strcmp(argv[1], "--cube") == 0) 
+        {
+            float result = cube(atof(argv[2]));
+            printf("%f\n", result);
+        }
+        else if(strcmp(argv[1], "--sin") == 0) 
+        {
+            float result = mysin(atoi(argv[3]), 10);
+            printf("%f\n", result);
+        }
+        else if(strcmp(argv[1], "--cos") == 0) 
+        {
+            float result = mycos(atof(argv[2]), atoi(argv[3]));
+            printf("%f\n", result);
+        }
     }
     else
     {

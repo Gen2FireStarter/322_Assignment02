@@ -60,6 +60,8 @@ double mysin(double x, int steps) {
     double result = 0.0;
     int i;
 
+    double rad = x * (acos(1.0) / 180.0);
+
     for (i = 0; i < steps; i++) {
         double term = mypow(-1, i) * mypow(x, 2*i + 1) / factorial(2*i + 1);
         result += term;
