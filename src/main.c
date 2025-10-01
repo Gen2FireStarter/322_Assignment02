@@ -23,11 +23,6 @@ int main(int argc, char *argv[])
 
     int failed_tests  = 0;
 
-    printf("%s\n", argv[0]);
-    printf("%s\n", argv[1]);
-    if (argc > 2) printf("%s\n", argv[2]);
-    if (argc > 3) printf("%s\n", argv[3]);
-
     if (argc > 1 )
     {
         if(strcmp(argv[1], "--author") == 0) 
@@ -91,7 +86,7 @@ int main(int argc, char *argv[])
         }
         else if(strcmp(argv[1], "--cos") == 0) 
         {
-            float result = mycos(atof(argv[2]), atoi(argv[3]));
+            float result = mycos(atoi(argv[3]), 10);
             printf("%f\n", result);
         }
     }

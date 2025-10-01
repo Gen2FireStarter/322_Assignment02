@@ -7,7 +7,7 @@
             "type": "cppdbg",
             "request": "launch",
             "program": "${workspaceFolder}\\bin\\main.exe",
-            "args": ["--sin", "11", "45"], // argues! ["1","2"]
+            "args": ["--cos", "12", "45"], // argues! ["1","2"]
             "stopAtEntry": false,
             "cwd": "${fileDirname}",
             "environment": [],

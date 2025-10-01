@@ -61,7 +61,7 @@ double mysin(double x, int steps) {
     double rad = x * (acos(-1.0) / 180.0);  // Convert degrees to radians
 
     for (int i = 0; i < steps; i++) {
-        double term = pow(-1, i) * pow(rad, 2 * i + 1) / factorial(2 * i + 1);
+        double term = mypow(-1, i) * mypow(rad, 2 * i + 1) / factorial(2 * i + 1);
         result += term;
     }
 
@@ -74,7 +74,7 @@ double mycos(double x, int steps){
     double rad = x * (acos(-1.0) / 180.0);
     
     for (int n = 0; n < steps; ++n) {
-        double term = mypow(-1, n) * mypow(rad, 2 * n) / tgamma(2 * n + 1);
+        double term = mypow(-1, n) * mypow(rad, 2 * n) / factorial(2 * n + 1);
         result += term;
     }
     
