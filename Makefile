@@ -8,21 +8,22 @@ CFLAGS := -g -Wall -std=c99 -pedantic -I $(INC_DIR)
 LFLAG := -g
 
 TARGET := $(BIN_DIR)/main.exe
-OBJS := main.o other.o
+SRCS := $(SRC_DIR)/main.c
+OBJS := $(OBJ_DIR)/main.o
 RM := -rm -f
 
 .PHONY: all clean
 
-all: $(TARGET)
+all: $(BIN_DIR) $(OBJ_DIR) $(TARGET)
 
-$(TARGET): $(OBJS) | $(BIN_DIR)
-	$(CC) $(LFAG) $(OBJS) -o $(TARGET)
+$(TARGET): $(OBJS)
+	$(CC) $(LFLAG) $(OBJS) -o $(TARGET)
 
-main.o: main.c
-	$(CC) $(CFLAGS) -c main.c -o main.o
+$(OBJ_DIR)/main.o: $(SRC_DIR)/main.c
+	$(CC) $(CFLAGS) -c $(SRC_DIR)/main.c -o $(OBJ_DIR)/main.o
 
-other.o: $(INC_DIR)/other.h other.c
-	$(CC) $(CFLAGS) -c other.c -o other.o
+$(OBJ_DIR)/math_ops.o: $(SRC_DIR)/math_ops.c
+	$(CC) $(CFLAGS) -c $(SRC_DIR)/math_ops.c -o $(OBJ_DIR)/math_ops.o
 
 $(BIN_DIR):
 	mkdir $(BIN_DIR)
@@ -31,4 +32,4 @@ $(OBJ_DIR):
 	mkdir $(OBJ_DIR)
 
 clean:
-	$(RM) $(OBJS)
+	$(RM) $(OBJS) $(TARGET)
